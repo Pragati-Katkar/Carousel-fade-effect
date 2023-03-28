@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carousel in bootstrap</title>
+	
+	<!--Bootstrap css link--->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+			
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	<!--<script>
+		$(function(){
+			$('.carousel').carousel({
+				interval:3000
+			});
+			
+			$('nextBtn').click(function(){
+				$('#carouselSlidesOnly').carousel('next');
+			})
+			$('prevBtn').click(function(){
+				$('#carouselSlidesOnly').carousel('prev');
+			})
+			$('pauseBtn').click(function(){
+				$('#carouselSlidesOnly').carousel('pause');
+			})
+			$('cycleBtn').click(function(){
+				$('#carouselSlidesOnly').carousel('cycle');
+			})
+		})
+	</script> -->
+	
+	<style>
+		*{
+			font-family:'Poppins',sans-serif;
+		}
+		.carousel-item img{
+			height:350px;
+		}
+		
+	</style>
+	
+	
+	
+	</head>
+	<body>
+		<div class="container">
+			<h2 class="py-3 text-center">Carousel Bootstrap</h2>
+			<div class="row py-3">
+				<div class="col">
+					<div id="carouselSlidesOnly" class="carousel slide carousel-fade mb-3" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselSlidesOnly" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselSlidesOnly" data-slide-to="1"></li>
+							<li data-target="#carouselSlidesOnly" data-slide-to="2"></li>
+							<li data-target="#carouselSlidesOnly" data-slide-to="3"></li>
+						  </ol> 
+											
+					
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-interval="1000">
+								<img src="image/owl2.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>First slide label</h5>
+									<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+								</div>	
+							</div>
+							<div class="carousel-item" data-interval="1000">
+								<img src="image/owl3.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>secound slide label</h5>
+									<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+								</div>
+							</div>
+							<div class="carousel-item" data-interval="1000">
+								<img src="image/owl4.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>third slide label</h5>
+									<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+								</div>
+							</div>
+							<div class="carousel-item" data-interval="1000">
+								<img src="image/owl1.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Forth slide label</h5>
+									<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+								</div>
+							</div>
+						</div>
+						<a href="#carouselSlidesOnly" class="carousel-control-prev" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a href="#carouselSlidesOnly" class="carousel-control-next" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+					<!--<button id="prevBtn">Prev</button>
+					<button id="nextBtn">Next</button>
+					<button id="pauseBtn">Pause</button>
+					<button id="cycleBtn">Cycle</button> -->
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
